@@ -35,6 +35,7 @@ public class User extends BaseEntity {
     @Fetch(FetchMode.JOIN)
     private Set<Product> boughtProducts;
 
+
     @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE})
     @Fetch(FetchMode.JOIN)
     private Set<User> friends;
