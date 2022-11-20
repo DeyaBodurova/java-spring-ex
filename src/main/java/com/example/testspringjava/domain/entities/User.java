@@ -38,4 +38,5 @@ public class User extends BaseEntity {
     @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE})
     @Fetch(FetchMode.JOIN)
     private Set<User> friends;
+
 }
