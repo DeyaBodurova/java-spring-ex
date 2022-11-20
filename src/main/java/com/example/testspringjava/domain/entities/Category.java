@@ -1,6 +1,22 @@
 package com.example.testspringjava.domain.entities;
 
-public class Category extends BaseEntity{
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "caterogies")
+public class Category extends BaseEntity {
+
+    @Column
+    private String name;
 }
