@@ -12,5 +12,4 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     @Query(value = "select * from `test-spring`.users order by RAND () LIMIT 1",
             nativeQuery = true)
     Optional<User> getRandomEntity();
-
 }
